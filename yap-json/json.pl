@@ -12,6 +12,7 @@
 
 :- module(json, [
         term2json/2,
+        json2term/2,
         version/1
     ]).
 
