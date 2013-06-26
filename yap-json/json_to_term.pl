@@ -55,6 +55,15 @@ parse_members([Pair|Members]) -->
 parse_members([Pair]) -->
     parse_pair(Pair).
 
+parse_pair(Key=Value) -->
+    ws,
+    parse_key(Key),
+    ws,
+    [':'],
+    ws,
+    parse_value(Value),
+    ws.
+    
 parse_pair(Key-Value) -->
     ws,
     parse_key(Key),
@@ -63,7 +72,7 @@ parse_pair(Key-Value) -->
     ws,
     parse_value(Value),
     ws.
-
+    
 parse_key(Key) -->
     parse_string(Key).
 

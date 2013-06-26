@@ -49,6 +49,11 @@ parse_pair(Key-Value) -->
     [':'],
     parse_value(Value).
 
+parse_pair(Key=Value) -->
+    parse_key(Key),
+    [':'],
+    parse_value(Value).
+
 parse_key(Key) -->
     parse_atom(Key).
 
