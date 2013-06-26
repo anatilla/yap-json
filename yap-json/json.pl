@@ -1,6 +1,6 @@
 /** <module> JSON parser.
  *
- *  original work by Sebastian Lundström
+ *  original work by Sebastian Lundstrï¿½m
  *  http://khueue.github.com/
  *
  *  adapted for YAP (http://www.dcc.fc.up.pt/~vsc/Yap/) 
@@ -23,7 +23,7 @@
 %   True if Version is a list representing the major, minor
 %   and patch version numbers of this library.
 
-ver([1,0,0]).
+ver([1,1,0]).
 
 %%  term2json(+Term, -Json).
 %%  term2json(-Term, +Json).
