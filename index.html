@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Yap-json by anatilla</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Yap-json</h1>
+        <h2>A library to easily convert Prolog terms in JSON</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/anatilla/yap-json/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/anatilla/yap-json/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/anatilla/yap-json" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="yap-json" class="anchor" href="#yap-json"><span class="octicon octicon-link"></span></a>yap-json</h1>
+
+<p>A library for easy convertion of Prolog terms in JSON.</p>
+
+<p>This library is adapted for <a href="http://www.dcc.fc.up.pt/~vsc/Yap/"> YAP </a>
+and is based on the original work made by <a href="https://github.com/khueue"> Sebastian Lundstr�m </a>.</p>
+
+<p>Feel free to modify, pull, fork and everything else you want to do.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>$ yap
+?- [json].
+
+...
+
+?- Term = json([name-alessandro,surname-natilla]),
+   term2json(Term, Json).
+Json = '{"name":"alessandro","surname":"natilla"}',
+Term = json([name-alessandro,surname-natilla])
+
+?- Json = '{"name":"alessandro","surname":"natilla"}',
+   json2term(Json, Term).
+Term = json([name-alessandro,surname-natilla]),
+Json = '{"name":"alessandro","surname":"natilla"}'.
+</code></pre>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("yap-json yap json prolog term");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
